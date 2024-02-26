@@ -1,416 +1,64 @@
-<html lang='en'>
-
-<head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>
-    Omega Squad – My Emanote Site
-  </title>
-  
-    
-      <meta property='og:description' content />
-      <meta property='og:site_name' content='My Emanote Site' />
-      <meta property='og:type' content='website' />
-      <meta property='og:title' content='Omega Squad' />
-    
-    
-      <base href='/' />
-      <link href='favicon.svg' rel='icon' />
-    
-    <meta name='generator' content='Emanote' />
-
-  
-  <link href='tailwind.css?instanceId=2d5fa9d2-b0c6-484e-845f-942ca5dd5805' rel='stylesheet' type='text/css' />
-
-  <!-- Heist error element -->
-  <style type='text/css'>
-    strong.error {
-      color: lightcoral;
-      font-size: 90%;
-      font-family: monospace;
-    }
-  </style>
-  <!-- What goes in this file will appear on near the end of <head>--><link rel='preload' href='_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
-
-<style>
-  @font-face {
-    font-family: 'MavenPro';
-    src: url('_emanote-static/fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf') format("truetype");
-    font-display: swap;
-  }
-
-  body {
-    font-family: 'MavenPro', sans-serif;
-    /* font-variation-settings: 'wght'300; */
-  }
-
-  a.mavenLinkBold {
-    font-variation-settings: 'wght'500;
-  }
-
-  strong {
-    font-variation-settings: 'wght'500;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  header,
-  .header-font {
-    font-family: 'MavenPro', sans-serif;
-  }
-</style>
-
-  <head-main></head-main>
+<!DOCTYPE html>
+<head><meta charset="utf-8"></meta>
+ <meta content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" name="viewport"></meta>
+ <link type="text/css" href="static/css/tabler-icons.min.css" rel="stylesheet"></link>
+ <link type="text/css" href="static/css/style.css" rel="stylesheet"></link>
+ <link type="text/css" href="static/css/custom.css" rel="stylesheet"></link>
+ <link type="text/css" href="static/css/export.css" rel="stylesheet"></link>
+ <link href="static/img/logo.png" type="image/png" rel="shortcut icon"></link>
+ <link href="static/img/logo.png" sizes="192x192" rel="shortcut icon"></link>
+ <link href="static/img/logo.png" rel="apple-touch-icon"></link>
+ <meta name="apple-mobile-web-app-title"></meta>
+ <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+ <meta name="apple-touch-fullscreen" content="yes"></meta>
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
+ <meta name="mobile-web-app-capable" content="yes"></meta>
+ <meta property="og:title"></meta>
+ <meta content="site" property="og:type"></meta>
+  <meta content="static/img/logo.png" property="og:image"></meta>
+ <meta property="og:description"></meta>
+ <title></title>
+ <meta property="og:site_name"></meta>
+ <meta></meta>
 </head>
-
-<!-- DoNotFormat -->
-
-
-
-<!-- DoNotFormat -->
-
-<body class='bg-gray-400 overflow-y-scroll'>
-  
-    <div class='container mx-auto'>
-
-      <nav id='breadcrumbs' class='w-full text-gray-700 md:hidden'>
-  <div class='flex justify-left'>
-    <div class='w-full px-2 py-2 bg-gray-50'>
-      <ul class='flex flex-wrap text-lg'>
-        <li class='inline-flex items-center'>
-          
-            
-              <img style='width: 1rem;' src='favicon.svg' />
-            
-          
-        </li>
-        
-      </ul>
-    </div>
-    <button class='inline px-2 py-1 text-white bg-blue-600 outline-none cursor-pointer focus:outline-none' title='Toggle sidebar' type='button' onclick="toggleHidden('sidebar')">
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
-      </svg>
-    </button>
-    <script>
-      function toggleHidden(elemId) {
-        document.getElementById(elemId).classList.toggle("hidden");
-      }
-    </script>
-  </div>
-</nav>
-
-      <div id='container' class='flex flex-nowrap flex-col md:flex-row bg-gray-50 md:mt-8 md:shadow-2xl md:mb-8'>
-        <!-- Sidebar column -->
-        <nav id='sidebar' class='flex-shrink hidden leading-relaxed md:block md:sticky md:top-0 md:h-full md:w-48 xl:w-64'>
-          <div class='px-2 py-2 text-gray-800'>
-
-            <div id='indexing-links' class='flex flex-row float-right p-2 space-x-2 text-gray-500'>
-              <a href='-/tags.html' title='View tags'>
-                <svg style='width: 1rem;' class='hover:text-blue-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-                  <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
-                  </path>
-                </svg>
-              </a>
-              <a href='-/all.html' title='Expand full tree'>
-                <svg style='width: 1rem;' class='hover:text-blue-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-                  <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
-                  </path>
-                </svg>
-              </a>
-            </div>
-
-            <div id='site-logo' class='pl-2'>
-              <div class='flex items-center my-2 space-x-2 justify-left'>
-                <a href='' title='Go to Home'>
-                  
-                    
-                      <!-- The style width attribute here is to prevent huge
-                      icon from displaying at those rare occasions when Tailwind
-                      hasn't kicked in immediately on page load 
-                      -->
-                      <img style='width: 1rem;' class='transition transform hover:scale-110 hover:opacity-80' src='favicon.svg' />
-                    
-                  
-                </a>
-                <a class='font-bold truncate' title='Go to Home' href=''>
-                  Home
-                </a>
-              </div>
-            </div>
-
-            
-              <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Readme' href='Readme.html'>
-      Readme
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-            
-              <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-  
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Sessions' href='Sessions.html'>
-      Sessions
-    </a>
-    
-      
-        <span class='text-gray-300' title='2 children inside'>
-          2
-        </span>
-      
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-            
-              <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-  
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Οργανώσεις' href='%CE%9F%CF%81%CE%B3%CE%B1%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82.html'>
-      Οργανώσεις
-    </a>
-    
-      
-        <span class='text-gray-300' title='4 children inside'>
-          4
-        </span>
-      
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-            
-              <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-  
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Τοποθεσίες' href='%CE%A4%CE%BF%CF%80%CE%BF%CE%B8%CE%B5%CF%83%CE%AF%CE%B5%CF%82.html'>
-      Τοποθεσίες
-    </a>
-    
-      
-        <span class='text-gray-300' title='3 children inside'>
-          3
-        </span>
-      
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-            
-              <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-  
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Χαρακτήρες' href='%CE%A7%CE%B1%CF%81%CE%B1%CE%BA%CF%84%CE%AE%CF%81%CE%B5%CF%82.html'>
-      Χαρακτήρες
-    </a>
-    
-      
-        <span class='text-gray-300' title='13 children inside'>
-          13
-        </span>
-      
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-            
-
-          </div>
-        </nav>
-
-        <!-- Main body column -->
-        <div class='flex-1 w-full overflow-x-auto bg-white'>
-          <main class='px-4 py-4'>
-            <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
-  <a class='z-40 tracking-tighter '>
-    Omega Squad
-  </a>
-</h1>
-            <article class='overflow-auto'>
-  <!-- What goes in this file will appear on top of note body-->
-  
-    <p class='mb-3'>
-      This is a knowlege database that <span title='Link is broken'><s>[[Andrew de'l Mour]]</s>❌</span> the famous and notorious mage from omega squad has aquired He and his companions explored the newly inhabitated world and are currently building their establishment
-    </p>
-  
-  <!-- What goes in this file will appear below the note body-->
-</article>
-            <div class='flex flex-col lg:flex-row lg:space-x-2'>
-              
-              
-            </div>
-            
-  <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
-    
-  </section>
-
-            <!-- What goes in this file will at the very end of the main div -->
-          </main>
-        </div>
-      </div>
-      <footer class='flex items-center justify-center mt-2 mb-8 space-x-4 text-center text-gray-800'>
-  
-  <div>
-    <a href='' title='Go to Home page'>
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-blue-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'></path>
-      </svg>
-    </a>
-  </div>
-  <div>
-    <a href='-/all.html' title='View Index'>
-      <svg class='w-6 h-6 hover:text-blue-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'>
-        </path>
-      </svg>
-    </a>
-  </div>
-  <div>
-    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.4.11.0'>
-      <img class='w-6 h-6 hover:text-blue-700' src='_emanote-static/emanote-logo.svg' />
-    </a>
-  </div>
-  <div>
-    <a href='-/tags.html' title='View tags'>
-      <svg class='w-6 h-6 hover:text-blue-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z'>
-        </path>
-      </svg>
-    </a>
-  </div>
-  <div>
-    <a href='-/tasks.html' title='View tasks'>
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-6 h-6 hover:text-blue-700' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
-      </svg>
-    </a>
-  </div>
-</footer>
-    </div>
-  
+ <body><div id="root"></div>
+ <script>window.logseq_db="[logseq____&quot;~#logseq____&apos;logseq____&quot;,null]"</script>
+ <script>window.logseq_state="{:ui/theme \"dark\", :ui/sidebar-collapsed-blocks {}, :config {\"local\" {:feature/enable-whiteboards? false, :shortcuts {}, :graph/forcesettings {:link-dist 50, :charge-strength -900, :charge-range 900}, :default-templates {:journals \"\"}, :query/views {:pprint (fn [r] [:pre.code (pprint r)])}, :macros {}, :shortcut/doc-mode-enter-for-new-block? false, :favorites [\"playground\" \"templates\" \"Todos\"], :ui/show-empty-bullets? false, :file/name-format :triple-lowbar, :preferred-workflow :now, :journal/page-title-format \"do MMMM yyyy\", :ref/default-open-blocks-level 2, :feature/enable-block-timestamps? false, :start-of-week 6, :ref/linked-references-collapsed-threshold 50, :outliner/block-title-collapse-enabled? false, :commands [], :ui/show-full-blocks? false, :meta/version 1, :hidden [], :default-queries {:journals [{:title \"🔨 NOW\", :query [:find (pull ?h [*]) :in $ ?start ?today :where [?h :block/marker ?marker] [(contains? #{\"NOW\" \"DOING\"} ?marker)] [?h :block/page ?p] [?p :block/journal? true] [?p :block/journal-day ?d] [(>= ?d ?start)] [(<= ?d ?today)]], :inputs [:14d :today], :result-transform (fn [result] (sort-by (fn [h] (get h :block/priority \"Z\")) result)), :group-by-page? false, :collapsed? false} {:title \"📅 NEXT\", :query [:find (pull ?h [*]) :in $ ?start ?next :where [?h :block/marker ?marker] [(contains? #{\"NOW\" \"LATER\" \"TODO\"} ?marker)] [?h :block/page ?p] [?p :block/journal? true] [?p :block/journal-day ?d] [(> ?d ?start)] [(< ?d ?next)]], :inputs [:today :7d-after], :group-by-page? false, :collapsed? false}]}, :ui/auto-expand-block-refs? true, :ui/enable-tooltip? true, :query/result-transforms {:sort-by-priority (fn [result] (sort-by (fn [h] (get h :block/priority \"Z\")) result))}, :graph/settings {:excluded-pages? true}, :property-pages/enabled? true, :block/content-max-length 10000, :ui/show-command-doc? true, :feature/enable-search-remove-accents? true}}}"</script>
+ <script type="text/javascript">// Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))</script>
+ <script src="static/js/react.production.min.js"></script>
+ <script src="static/js/react-dom.production.min.js"></script>
+ <script src="static/js/ui.js"></script>
+ <script src="static/js/main.js"></script>
+ <script src="static/js/interact.min.js"></script>
+ <script src="static/js/highlight.min.js"></script>
+ <script src="static/js/katex.min.js"></script>
+ <script src="static/js/html2canvas.min.js"></script>
+ <script src="static/js/code-editor.js"></script>
+ <script src="static/js/custom.js"></script>
 </body>
-
-</html>
